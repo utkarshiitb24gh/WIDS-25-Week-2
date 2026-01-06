@@ -1,4 +1,5 @@
 # WIDS-25-MID TERM REPORT
+# Project:Study of Models(ID:01)
 I learnt about use and how to plot various kinds of  plots,histograms in order to visualise given data, next thing i learnt is
 about correlation matrix, why is it used and its application and visulaisation, also learnt some basic functionalities
 like describe.(),.head(),.info() etc

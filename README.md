@@ -1,35 +1,16 @@
-# WIDS-25-Week-2
-Here is the submission for Study of Models WIDS 25 submission for week 2
-I used housing dataset from external source rather than sklearn library because it was not displaying categorical attributes
-All tasks are coded in an order as specified in assignemnt 2 quesiton:
-Load the California Housing dataset from sklearn.datasets.Use pandas library.Deliverables:
-     Shape of dataset
-     Column names
-     First 10 rows
-
-Use .describe() , .info() for understanding data.Which feature has largest variance?
-Univariate Analysis (Histograms)
-Plot histograms for all numeric columns with proper labelling of axis.
-Try:
-different bins
-Explain most widely used methods to eliminate skewness of column features in comments.
-Use Box plot for each feature to detect outliers in MedInc
-AveRooms,Population
-Correlation Heatmap:Compute correlation matrix
-,Plot a heatmap
- Latitude/Longitude Visualization
-Scatter plot:
-Longitude vs Latitude
-Color (cmap) by MedHouseVal
-Point size based on Population
-Explain why scaling is required before PCA.
-Apply PCA on features
-Plot explained variance ratio
-Choose top 2 principal components
-Scatter plot:PC1 vs PC2
-Color points by MedHouseVal
-Create a scikit-learn Pipeline for multiple linear regression and print coefficients- intercept matrix (exclude latitude and longitude in this final model becoz that is not relevant data : use correlation matrix to prove this point also)
-Evaluate model on metrics of MSE loss, MAE loss, R2 score , adjusted R2 score. 
-Is high R2 score always good? Is low training loss always preferred?
-Plot:Predicted vs Actual
-Residuals vs Predicted values
+# WIDS-25-MID TERM REPORT
+I learnt about use and how to plot various kinds of  plots,histograms in order to visualise given data, next thing i learnt is
+about correlation matrix, why is it used and its application and visulaisation, also learnt some basic functionalities
+like describe.(),.head(),.info() etc
+Next thing i learnt is using plots for identifying outliers. 
+Then visualising our Housing price data using scatter plot and the data which was originally of California when plotted on scatter plot
+based on the latitude, longitude and median house value it was in shape of California, and this was very pleasing.
+Then we learn about preprocessing imputer and Scaling, preprocessing is refining our data so that we have best part of it remaining to train 
+and imputer is used to encode missing values, we used standard scaler for scaling, this basically brings all of the numerical features on the
+same scale (example: (0,1)) then we built pipeline which had these three transformations and then we applied that to our data.
+Then we split our data in two parts using train and test split and model we used for training our data was Linear Regression.
+After model got trained we plot the predicted values and actual values on graphs as well as we also find out mean square error
+ans mean absolute error.
+We noticed that most of the points in our predicted vs acutal values scatter plots were concentrated around line y=x(actual=predicted).
+Where as some were very much away from the line.
+Thank You
